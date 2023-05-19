@@ -95,7 +95,7 @@
             display: flex
             align-items: center
             justify-content: center
-            transition: background-color $colour-trans-time $trans-func
+            transition: background-color $colour-trans-time $trans-func, width $trans-time $trans-func, height $trans-time $trans-func,
 
         &__sclera
             width: 30px
@@ -105,6 +105,7 @@
             display: flex
             align-items: center
             justify-content: center
+            transition: width $trans-time $trans-func, height $trans-time $trans-func,
 
         &__iris
             width: 15px
@@ -223,8 +224,16 @@
             margin-top: -5px
             gap: 50px
 
+        .frog__eye
+            width: 50px
+            height: 50px
+
+        .frog__sclera
+            width: 40px
+            height: 40px
+
         .frog__iris
-            width: 25px
+            width: 30px
             height: 6px
             border-radius: 3px
 
@@ -240,13 +249,11 @@
             transform: translate(0, -50px)
 
         .frog__cheek-container
-            margin-top: -79px
-            gap: 120px
+            margin-top: -90px
+            gap: 125px
 
         .frog__cheek
-            width: 50px
-            height: 50px
-
-    
+            width: 60px
+            height: 60px
 
 </style>
