@@ -1,12 +1,18 @@
 <script lang="ts">
-    let count: number = 0
-    const increment = () => {
-      count += 1
-    }
+    // let count: number = 0
+    // const increment = () => {
+    //   count += 1
+    // }
+
+    const availableColors = ["red", "green", "blue", "yellow", "purple"];
+    const pickedColor = availableColors[Math.ceil(Math.random() * availableColors.length)];
+
+
 </script>
 
-<section class="frog">
-    <!-- <div class="frog__container"> -->
+<section
+    class="frog"
+>
         <div class="frog__face">
             <div class="frog__eyes">
                 <div class="frog__eye frog__eye--left">
@@ -37,7 +43,6 @@
             </div>
 
         </div>
-    <!-- </div> -->
 </section>
 
 <style lang="sass">
@@ -109,7 +114,7 @@
             // display: flex
             // justify-content: center
             // transform: translate(6px, 6px)
-            transition: width $trans-time $trans-func, width $trans-time $trans-func,  border-radius $trans-time $trans-func
+            transition: width $trans-time $trans-func, width $trans-time $trans-func, border-radius $trans-time $trans-func
 
         &__nose
             position: relative
