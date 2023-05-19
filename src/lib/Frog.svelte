@@ -128,10 +128,11 @@
 
         &__nostril
             // position: absolute
-            width: 10px
-            height: 10px
+            width: 7px
+            height: 7px
             border-radius: 50%
             background-color: black
+            transition: width $trans-time $trans-func, height $trans-time $trans-func, border-radius $trans-time $trans-func
 
             // &--left
             //     transform: translate(-10px, 0)
@@ -165,8 +166,8 @@
             height: 30px
             border-radius: 5px
             background-color: pink
-            transform: translate(-15px, -5px)
-            transition: transform $trans-time/2 $trans-func
+            transform: translate(-10px, -5px)
+            transition: transform $trans-time $trans-func
 
         &__cheek-container
             position: relative
@@ -209,6 +210,10 @@
             height: 6px
             border-radius: 3px
 
+        .frog__nostril
+            width: 10px
+            height: 10px
+
         .frog__lips
             width: 10px
             margin-top: 5px
@@ -217,7 +222,7 @@
             transform: translate(0, -30px)
 
         .frog__cheek-container
-            margin-top: -83px
+            margin-top: -80px
             gap: 120px
 
         .frog__cheek
