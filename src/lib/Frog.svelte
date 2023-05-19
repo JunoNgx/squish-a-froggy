@@ -64,7 +64,7 @@
             height: 100px
             border-radius: 50%
             background-color: blue
-            transition: transform $trans-time $trans-func
+            transition: transform $trans-time $trans-func, height $trans-time $trans-func, width $trans-time $trans-func
 
         &__eyes
             position: relative
@@ -99,8 +99,10 @@
         &__nose
             position: relative
             margin-top: 15px
-            margin-left: 66px
+            // margin-left: 66px
             background-color: purple
+            display: flex
+            justify-content: center
 
         &__nostril
             position: absolute
@@ -110,7 +112,9 @@
             background-color: green
 
             &--left
-                transform: translate(15px, 0)
+                transform: translate(-10px, 0)
+            &--right
+                transform: translate(10px, 0)
 
         &__mouth
             position: relative
@@ -160,9 +164,9 @@
         cursor: crosshair
         // background-color: yellow
         // transform:  $trans-time $trans-func
+        width: 180px
+        height: 80px
         transform: translateY(20px)
-
-        // .frog__
 
 
 
