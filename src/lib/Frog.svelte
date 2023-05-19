@@ -108,6 +108,7 @@
             // display: flex
             // justify-content: center
             // transform: translate(6px, 6px)
+            transition: width $trans-time $trans-func, width $trans-time $trans-func,  border-radius $trans-time $trans-func
 
         &__nose
             position: relative
@@ -188,7 +189,10 @@
         .frog__eyes
             gap: 60px
 
-        .iris__
+        .frog__iris
+            width: 25px
+            height: 10px
+            border-radius: 5px
 
 
 
