@@ -1,17 +1,23 @@
-<script lang="ts">
-    // let count: number = 0
-    // const increment = () => {
-    //   count += 1
-    // }
+<script>
+    let pickedColour;
+    const switchColour = () => {
+        const availableColours = ["red", "green", "blue", "yellow", "purple", "pink", "orange"];
+        const randomIndex = Math.floor(Math.random() * availableColours.length);
+        pickedColour = availableColours[randomIndex];
+    }
 
-    const availableColors = ["red", "green", "blue", "yellow", "purple"];
-    const pickedColor = availableColors[Math.ceil(Math.random() * availableColors.length)];
-
-
+    switchColour();
 </script>
 
 <section
     class="frog"
+    class:red = {pickedColour === "red"}
+    class:green = {pickedColour === "green"}
+    class:blue = {pickedColour === "blue"}
+    class:yellow = {pickedColour === "yellow"}
+    class:purple = {pickedColour === "purple"}
+    class:pink = {pickedColour === "pink"}
+    class:orange = {pickedColour === "orange"}
 >
         <div class="frog__face">
             <div class="frog__eyes-container">
@@ -64,8 +70,8 @@
             width: 160px
             height: 100px
             border-radius: 50%
-            background-color: blue
-            background-color: $bCol
+            // background-color: blue
+            // background-color: $bCol
             transition: transform $trans-time $trans-func, height $trans-time $trans-func, width $trans-time $trans-func
 
         &__eyes-container
@@ -80,8 +86,8 @@
             width: 40px
             height: 40px
             border-radius: 50%
-            background-color: red
-            background-color: $bCol
+            // background-color: red
+            // background-color: $bCol
             display: flex
             align-items: center
             justify-content: center
@@ -156,9 +162,51 @@
             width: 15px
             height: 15px
             border-radius: 50%
-            background-color: cyan
-            background-color: $bCol
+            // background-color: cyan
+            // background-color: $bCol
             transition: width $trans-time $trans-func, height $trans-time $trans-func
+
+    .red .frog
+        &__face,
+        &__eye,
+        &__cheek
+            background-color: indianred
+
+    .green .frog
+        &__face,
+        &__eye,
+        &__cheek
+            background-color: palegreen
+
+    .blue .frog
+        &__face,
+        &__eye,
+        &__cheek
+            background-color: skyblue
+
+    .yellow .frog
+        &__face,
+        &__eye,
+        &__cheek
+            background-color: khaki
+
+    .purple .frog
+        &__face,
+        &__eye,
+        &__cheek
+            background-color: mediumorchid
+
+    .pink .frog
+        &__face,
+        &__eye,
+        &__cheek
+            background-color: peachpuff
+
+    .orange .frog
+        &__face,
+        &__eye,
+        &__cheek
+            background-color: tomato
 
     .frog__face:hover
         cursor: crosshair
@@ -193,5 +241,7 @@
         .frog__cheek
             width: 50px
             height: 50px
+
+    
 
 </style>
