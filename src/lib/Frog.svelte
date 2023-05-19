@@ -213,11 +213,11 @@
         &__cheek
             background-color: tomato
 
-    .frog__face:hover
-        cursor: crosshair
-        width: 180px
-        height: 80px
-        transform: translateY(20px)
+    :global(.frog.active)
+        .frog__face
+            width: 180px
+            height: 80px
+            transform: translateY(20px)
 
         .frog__eyes
             margin-top: -5px

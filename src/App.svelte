@@ -1,5 +1,25 @@
-<script lang="ts">
+<script>
+    import { onMount } from "svelte"
     import Frog from "./lib/Frog.svelte"
+
+    const loopSquishing = () => {
+        const frogEls = document.getElementsByClassName("frog")
+        // :(
+        for (let i = 0; i < frogEls.length; i++) {
+            console.log(frogEls[i])
+            setTimeout(() => {
+                frogEls[i].classList.add("active");
+            }, i * 300)
+
+            setTimeout(() => {
+                frogEls[i].classList.remove("active");
+            }, i * 300 + 100)
+        }
+
+        setTimeout(loopSquishing, 2400)
+    }
+
+    onMount(loopSquishing);
 </script>
 
 <main>
