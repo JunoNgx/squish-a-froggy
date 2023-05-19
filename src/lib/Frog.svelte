@@ -147,7 +147,9 @@
             width: 85px
             height: 8px
             border-radius: 4px
+            margin-top: 0
             background-color: orange
+            transition: width $trans-time $trans-func, width $trans-time $trans-func, border-radius $trans-time $trans-func
 
         &__tongue
             position: absolute
@@ -155,7 +157,8 @@
             height: 30px
             border-radius: 5px
             background-color: pink
-            transform: translate(-20px, -5px)
+            transform: translate(-15px, -5px)
+            transition: transform $trans-time/2 $trans-func
 
         &__cheek-container
             position: relative
@@ -193,6 +196,13 @@
             width: 25px
             height: 10px
             border-radius: 5px
+
+        .frog__lips
+            width: 10px
+            // margin-top: 15px
+
+        .frog__tongue
+            transform: translate(0, -30px)
 
 
 
