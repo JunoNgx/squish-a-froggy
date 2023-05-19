@@ -28,9 +28,8 @@
         </div>
 
         <div class="frog__mouth">
-            <div class="frog__lips">
-                <div class="frog__tongue">
-            </div>
+            <div class="frog__tongue"/>
+            <div class="frog__lips"/>
         </div>
 
     </div>
@@ -97,5 +96,30 @@
             &--left
                 transform: translate(15px, 0)
 
+        &__mouth
+            position: relative
+            overflow: hidden
+            height: 40px
+            margin-top: 35px
+            display: flex
+            // align-items: center
+            justify-content: center
+            // background: pink
+
+        &__lips
+            // position: relative
+            position: absolute
+            width: 85px
+            height: 8px
+            border-radius: 4px
+            background-color: orange
+
+        &__tongue
+            position: absolute
+            width: 10px
+            height: 30px
+            border-radius: 5px
+            background-color: pink
+            transform: translate(-20px, -5px)
 
 </style>
