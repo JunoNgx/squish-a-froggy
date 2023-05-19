@@ -23,8 +23,8 @@
         </div>
 
         <div class="frog__nose">
-            <div class="frog__nostril frog__eye--left"/>
-            <div class="frog__nostril frog__eye--right"/>
+            <div class="frog__nostril frog__nostril--left"/>
+            <div class="frog__nostril frog__nostril--right"/>
         </div>
 
         <div class="frog__mouth">
@@ -54,7 +54,7 @@
             // position: absolute
             position: relative
             width: 160px
-            height: 120px
+            height: 100px
             border-radius: 50%
             background-color: blue
 
@@ -69,9 +69,9 @@
             background-color: red
 
             &--left
-                transform: translate(15px, -10px)
+                transform: translate(15px, -15px)
             &--right
-                transform: translate(105px, -10px)
+                transform: translate(105px, -15px)
 
         &__iris
             position: absolute
@@ -81,6 +81,21 @@
             background-color: white
             transform: translate(9px, 9px)
 
-        &
+        &__nose
+            position: relative
+            margin-top: 15px
+            margin-left: 66px
+            background-color: purple
+
+        &__nostril
+            position: absolute
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: green
+
+            &--left
+                transform: translate(15px, 0)
+
 
 </style>
