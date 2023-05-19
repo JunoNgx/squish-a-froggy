@@ -57,13 +57,10 @@
         width: 200px
         height: 200px
         display: flex
-        // place-items: center center
         align-items: center
         justify-content: center
 
         &__face
-            // position: absolute
-            // position: relative
             width: 160px
             height: 100px
             border-radius: 50%
@@ -80,7 +77,6 @@
             transition: gap $trans-time $trans-func, margin-top $trans-time $trans-func
 
         &__eye
-            // position: absolute
             width: 40px
             height: 40px
             border-radius: 50%
@@ -90,13 +86,7 @@
             align-items: center
             justify-content: center
 
-            // &--left
-            //     transform: translate(15px, -15px)
-            // &--right
-            //     transform: translate(105px, -15px)
-
         &__sclera
-            // position: absolute
             width: 30px
             height: 30px
             border-radius: 50%
@@ -104,40 +94,27 @@
             display: flex
             align-items: center
             justify-content: center
-            // transform: translate(9px, 9px)
 
         &__iris
             width: 15px
             height: 15px
             border-radius: 7px
             background-color: black
-            // display: flex
-            // justify-content: center
-            // transform: translate(6px, 6px)
             transition: width $trans-time $trans-func, height $trans-time $trans-func, border-radius $trans-time $trans-func
 
         &__nose
             position: relative
-            // margin-top: 15px
-            // margin-left: 66px
-            // background-color: purple
             margin-top: -10px
             display: flex
             justify-content: center
             gap: 8px
 
         &__nostril
-            // position: absolute
             width: 7px
             height: 7px
             border-radius: 50%
             background-color: black
             transition: width $trans-time $trans-func, height $trans-time $trans-func, border-radius $trans-time $trans-func
-
-            // &--left
-            //     transform: translate(-10px, 0)
-            // &--right
-            //     transform: translate(10px, 0)
 
         &__mouth
             position: relative
@@ -145,12 +122,9 @@
             height: 40px
             margin-top: 15px
             display: flex
-            // align-items: center
             justify-content: center
-            // background: pink
 
         &__lips
-            // position: relative
             position: absolute
             width: 85px
             height: 8px
@@ -172,7 +146,6 @@
         &__cheek-container
             position: relative
             margin-top: -50px
-            // width: 10px
             background-color:green
             display: flex
             justify-content: center
@@ -180,7 +153,6 @@
             transition: gap $trans-time $trans-func, margin-top $trans-time $trans-func
 
         &__cheek
-            // position: absolute
             width: 15px
             height: 15px
             border-radius: 50%
@@ -188,15 +160,8 @@
             background-color: $bCol
             transition: width $trans-time $trans-func, height $trans-time $trans-func
 
-            // &--left
-            //     transform: translate(0, -70px)
-            // &--right
-            //     transform: translate(130px, -70px)
-
     .frog__face:hover
         cursor: crosshair
-        // background-color: yellow
-        // transform:  $trans-time $trans-func
         width: 180px
         height: 80px
         transform: translateY(20px)
