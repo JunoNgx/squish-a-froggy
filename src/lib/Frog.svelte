@@ -72,6 +72,7 @@
             justify-content: center
             gap: 50px
             margin-top: -15px
+            transition: gap $trans-time $trans-func
 
         &__eye
             // position: absolute
@@ -79,6 +80,9 @@
             height: 40px
             border-radius: 50%
             background-color: red
+            display: flex
+            align-items: center
+            justify-content: center
 
             // &--left
             //     transform: translate(15px, -15px)
@@ -86,19 +90,24 @@
             //     transform: translate(105px, -15px)
 
         &__sclera
-            position: absolute
-            width: 21px
-            height: 21px
+            // position: absolute
+            width: 30px
+            height: 30px
             border-radius: 50%
             background-color: white
-            transform: translate(9px, 9px)
+            display: flex
+            align-items: center
+            justify-content: center
+            // transform: translate(9px, 9px)
 
         &__iris
-            width: 10px
-            height: 10px
-            border-radius: 50%
+            width: 15px
+            height: 15px
+            border-radius: 7px
             background-color: black
-            transform: translate(6px, 6px)
+            // display: flex
+            // justify-content: center
+            // transform: translate(6px, 6px)
 
         &__nose
             position: relative
@@ -175,6 +184,11 @@
         width: 180px
         height: 80px
         transform: translateY(20px)
+
+        .frog__eyes
+            gap: 60px
+
+        .iris__
 
 
 
