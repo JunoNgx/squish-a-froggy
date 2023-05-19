@@ -6,39 +6,38 @@
 </script>
 
 <section class="frog">
-    <div class="frog__face">
-
-        <div class="frog__eyes">
-            <div class="frog__eye frog__eye--left">
-                <div class="frog__sclera frog__sclera--left">
-                    <div class="frog__iris frog__iris--left"/>
+    <!-- <div class="frog__container"> -->
+        <div class="frog__face">
+            <div class="frog__eyes">
+                <div class="frog__eye frog__eye--left">
+                    <div class="frog__sclera frog__sclera--left">
+                        <div class="frog__iris frog__iris--left"/>
+                    </div>
+                </div>
+                <div class="frog__eye frog__eye--right">
+                    <div class="frog__sclera frog__sclera--left">
+                        <div class="frog__iris frog__iris--left"/>
+                    </div>
                 </div>
             </div>
-            <div class="frog__eye frog__eye--right">
-                <div class="frog__sclera frog__sclera--left">
-                    <div class="frog__iris frog__iris--left"/>
-                </div>
+
+            <div class="frog__nose">
+                <div class="frog__nostril frog__nostril--left"/>
+                <div class="frog__nostril frog__nostril--right"/>
             </div>
-        </div>
 
-        <div class="frog__nose">
-            <div class="frog__nostril frog__nostril--left"/>
-            <div class="frog__nostril frog__nostril--right"/>
-        </div>
+            <div class="frog__mouth">
+                <div class="frog__tongue"/>
+                <div class="frog__lips"/>
+            </div>
 
-        <div class="frog__mouth">
-            <div class="frog__tongue"/>
-            <div class="frog__lips"/>
-        </div>
+            <div class="frog__cheek-container">
+                <div class="frog__cheek frog__cheek--right"/>
+                <div class="frog__cheek frog__cheek--left"/>
+            </div>
 
-    <!-- <div class="frog__face"> -->
-        <div class="frog__cheek-container">
-            <div class="frog__cheek frog__cheek--right"/>
-            <div class="frog__cheek frog__cheek--left"/>
-        <!-- </div> -->
         </div>
-
-    </div>
+    <!-- </div> -->
 </section>
 
 <style lang="sass">
@@ -59,11 +58,12 @@
 
         &__face
             // position: absolute
-            position: relative
+            // position: relative
             width: 160px
             height: 100px
             border-radius: 50%
             background-color: blue
+            background-color: $bCol
             transition: transform $trans-time $trans-func, height $trans-time $trans-func, width $trans-time $trans-func
 
         &__eyes
@@ -80,6 +80,7 @@
             height: 40px
             border-radius: 50%
             background-color: red
+            background-color: $bCol
             display: flex
             align-items: center
             justify-content: center
@@ -115,6 +116,7 @@
             // margin-top: 15px
             // margin-left: 66px
             // background-color: purple
+            margin-top: -10px
             display: flex
             justify-content: center
             gap: 8px
@@ -124,7 +126,7 @@
             width: 10px
             height: 10px
             border-radius: 50%
-            background-color: green
+            background-color: black
 
             // &--left
             //     transform: translate(-10px, 0)
@@ -149,7 +151,8 @@
             border-radius: 4px
             margin-top: 0
             background-color: orange
-            transition: width $trans-time $trans-func, width $trans-time $trans-func, border-radius $trans-time $trans-func
+            background-color: black
+            transition: width $trans-time $trans-func, width $trans-time $trans-func, border-radius $trans-time $trans-func, margin $trans-time $trans-func
 
         &__tongue
             position: absolute
@@ -168,13 +171,16 @@
             display: flex
             justify-content: center
             gap: 90px
+            transition: gap $trans-time $trans-func, margin-top $trans-time $trans-func
 
         &__cheek
             // position: absolute
-            width: 30px
-            height: 30px
+            width: 15px
+            height: 15px
             border-radius: 50%
             background-color: cyan
+            background-color: $bCol
+            transition: width $trans-time $trans-func, height $trans-time $trans-func
 
             // &--left
             //     transform: translate(0, -70px)
@@ -190,7 +196,7 @@
         transform: translateY(20px)
 
         .frog__eyes
-            gap: 60px
+            gap: 50px
 
         .frog__iris
             width: 25px
@@ -199,11 +205,17 @@
 
         .frog__lips
             width: 10px
-            // margin-top: 15px
+            margin-top: 5px
 
         .frog__tongue
             transform: translate(0, -30px)
 
+        .frog__cheek-container
+            margin-top: -70px
+            gap: 120px
 
+        .frog__cheek
+            width: 50px
+            height: 50px
 
 </style>
