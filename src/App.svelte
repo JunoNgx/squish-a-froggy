@@ -13,7 +13,7 @@
 
             setTimeout(() => {
                 frogEls[i].classList.remove("active");
-            }, i * 300 + 100)
+            }, i * 300 + 300)
         }
 
         setTimeout(loopSquishing, 2400)
