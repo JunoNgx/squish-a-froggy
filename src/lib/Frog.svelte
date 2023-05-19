@@ -136,9 +136,9 @@
 
         &__tongue
             position: absolute
-            width: 10px
+            width: 20px
             height: 30px
-            border-radius: 5px
+            border-radius: 10px
             background-color: pink
             transform: translate(-10px, -5px)
             transition: transform $trans-time $trans-func
@@ -184,7 +184,7 @@
             margin-top: 5px
 
         .frog__tongue
-            transform: translate(0, -30px)
+            transform: translate(0, -50px)
 
         .frog__cheek-container
             margin-top: -80px
