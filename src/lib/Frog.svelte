@@ -2,7 +2,7 @@
     let pickedColour
     const colourSwitchInterval = 3000 + Math.random() * 3000
     const switchColour = () => {
-        const availableColours = ["red", "green", "blue", "yellow", "purple", "pink", "orange"]
+        const availableColours = ["cyan", "green", "blue", "yellow", "purple", "pink", "orange"]
         const randomIndex = Math.floor(Math.random() * availableColours.length)
         pickedColour = availableColours[randomIndex]
 
@@ -14,7 +14,7 @@
 
 <section
     class="frog"
-    class:red = {pickedColour === "red"}
+    class:cyan = {pickedColour === "cyan"}
     class:green = {pickedColour === "green"}
     class:blue = {pickedColour === "blue"}
     class:yellow = {pickedColour === "yellow"}
@@ -172,11 +172,11 @@
             // background-color: $bCol
             transition: background-color $colour-trans-time $trans-func, width $trans-time $trans-func, height $trans-time $trans-func
 
-    .red .frog
+    .cyan .frog
         &__face,
         &__eye,
         &__cheek
-            background-color: indianred
+            background-color: cadetblue
 
     .green .frog
         &__face,
