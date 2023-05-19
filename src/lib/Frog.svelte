@@ -54,8 +54,8 @@
     .frog
         position: relative
         // border: black 1px solid
-        width: 200px
-        height: 200px
+        width: 150px
+        height: 150px
         display: flex
         align-items: center
         justify-content: center
