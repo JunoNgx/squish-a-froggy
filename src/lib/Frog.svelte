@@ -1,15 +1,15 @@
 <script>
-    let pickedColour;
-    const colourSwitchInterval = 3000 + Math.random() * 3000;
+    let pickedColour
+    const colourSwitchInterval = 3000 + Math.random() * 3000
     const switchColour = () => {
-        const availableColours = ["red", "green", "blue", "yellow", "purple", "pink", "orange"];
-        const randomIndex = Math.floor(Math.random() * availableColours.length);
-        pickedColour = availableColours[randomIndex];
+        const availableColours = ["red", "green", "blue", "yellow", "purple", "pink", "orange"]
+        const randomIndex = Math.floor(Math.random() * availableColours.length)
+        pickedColour = availableColours[randomIndex]
 
-        setTimeout(switchColour, colourSwitchInterval);
+        setTimeout(switchColour, colourSwitchInterval)
     }
 
-    switchColour();
+    switchColour()
 </script>
 
 <section
