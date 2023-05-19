@@ -10,10 +10,14 @@
 
         <div class="frog__eyes">
             <div class="frog__eye frog__eye--left">
-                <div class="frog__iris frog__iris--left"/>
+                <div class="frog__sclera frog__sclera--left">
+                    <div class="frog__iris frog__iris--left"/>
+                </div>
             </div>
             <div class="frog__eye frog__eye--right">
-                <div class="frog__iris frog__iris--left"/>
+                <div class="frog__sclera frog__sclera--left">
+                    <div class="frog__iris frog__iris--left"/>
+                </div>
             </div>
         </div>
 
@@ -77,7 +81,7 @@
             &--right
                 transform: translate(105px, -15px)
 
-        &__iris
+        &__sclera
             position: absolute
             width: 21px
             height: 21px
