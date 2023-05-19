@@ -14,7 +14,7 @@
     class="frog"
 >
         <div class="frog__face">
-            <div class="frog__eyes">
+            <div class="frog__eyes-container">
                 <div class="frog__eye frog__eye--left">
                     <div class="frog__sclera frog__sclera--left">
                         <div class="frog__iris frog__iris--left"/>
@@ -68,7 +68,7 @@
             background-color: $bCol
             transition: transform $trans-time $trans-func, height $trans-time $trans-func, width $trans-time $trans-func
 
-        &__eyes
+        &__eyes-container
             position: relative
             display: flex
             justify-content: center
