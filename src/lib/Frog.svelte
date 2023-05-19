@@ -1,9 +1,12 @@
 <script>
     let pickedColour;
+    const colourSwitchInterval = 3000 + Math.random() * 3000;
     const switchColour = () => {
         const availableColours = ["red", "green", "blue", "yellow", "purple", "pink", "orange"];
         const randomIndex = Math.floor(Math.random() * availableColours.length);
         pickedColour = availableColours[randomIndex];
+
+        setTimeout(switchColour, colourSwitchInterval);
     }
 
     switchColour();
@@ -55,6 +58,7 @@
 
     $trans-time: 0.3s
     $trans-func: ease-in-out
+    $colour-trans-time: 0.7s
     $bCol: LightCoral
 
     .frog
@@ -72,7 +76,7 @@
             border-radius: 50%
             // background-color: blue
             // background-color: $bCol
-            transition: transform $trans-time $trans-func, height $trans-time $trans-func, width $trans-time $trans-func
+            transition: background-color $colour-trans-time $trans-func, transform $trans-time $trans-func, height $trans-time $trans-func, width $trans-time $trans-func
 
         &__eyes-container
             position: relative
@@ -91,6 +95,7 @@
             display: flex
             align-items: center
             justify-content: center
+            transition: background-color $colour-trans-time $trans-func
 
         &__sclera
             width: 30px
@@ -164,7 +169,7 @@
             border-radius: 50%
             // background-color: cyan
             // background-color: $bCol
-            transition: width $trans-time $trans-func, height $trans-time $trans-func
+            transition: background-color $colour-trans-time $trans-func, width $trans-time $trans-func, height $trans-time $trans-func
 
     .red .frog
         &__face,
@@ -235,7 +240,7 @@
             transform: translate(0, -50px)
 
         .frog__cheek-container
-            margin-top: -80px
+            margin-top: -79px
             gap: 120px
 
         .frog__cheek
