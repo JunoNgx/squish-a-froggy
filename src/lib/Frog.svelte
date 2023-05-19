@@ -68,18 +68,22 @@
 
         &__eyes
             position: relative
+            display: flex
+            justify-content: center
+            gap: 50px
+            margin-top: -15px
 
         &__eye
-            position: absolute
+            // position: absolute
             width: 40px
             height: 40px
             border-radius: 50%
             background-color: red
 
-            &--left
-                transform: translate(15px, -15px)
-            &--right
-                transform: translate(105px, -15px)
+            // &--left
+            //     transform: translate(15px, -15px)
+            // &--right
+            //     transform: translate(105px, -15px)
 
         &__sclera
             position: absolute
@@ -98,29 +102,30 @@
 
         &__nose
             position: relative
-            margin-top: 15px
+            // margin-top: 15px
             // margin-left: 66px
-            background-color: purple
+            // background-color: purple
             display: flex
             justify-content: center
+            gap: 8px
 
         &__nostril
-            position: absolute
+            // position: absolute
             width: 10px
             height: 10px
             border-radius: 50%
             background-color: green
 
-            &--left
-                transform: translate(-10px, 0)
-            &--right
-                transform: translate(10px, 0)
+            // &--left
+            //     transform: translate(-10px, 0)
+            // &--right
+            //     transform: translate(10px, 0)
 
         &__mouth
             position: relative
             overflow: hidden
             height: 40px
-            margin-top: 35px
+            margin-top: 15px
             display: flex
             // align-items: center
             justify-content: center
@@ -144,21 +149,24 @@
 
         &__cheek-container
             position: relative
-            margin-top: 30px
-            width: 10px
+            margin-top: -50px
+            // width: 10px
             background-color:green
+            display: flex
+            justify-content: center
+            gap: 90px
 
         &__cheek
-            position: absolute
+            // position: absolute
             width: 30px
             height: 30px
             border-radius: 50%
             background-color: cyan
 
-            &--left
-                transform: translate(0, -70px)
-            &--right
-                transform: translate(130px, -70px)
+            // &--left
+            //     transform: translate(0, -70px)
+            // &--right
+            //     transform: translate(130px, -70px)
 
     .frog__face:hover
         cursor: crosshair
