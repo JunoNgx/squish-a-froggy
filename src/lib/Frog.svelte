@@ -75,9 +75,9 @@
             position: relative
             display: flex
             justify-content: center
-            gap: 50px
+            gap: 40px
             margin-top: -15px
-            transition: gap $trans-time $trans-func
+            transition: gap $trans-time $trans-func, margin-top $trans-time $trans-func
 
         &__eye
             // position: absolute
@@ -114,7 +114,7 @@
             // display: flex
             // justify-content: center
             // transform: translate(6px, 6px)
-            transition: width $trans-time $trans-func, width $trans-time $trans-func, border-radius $trans-time $trans-func
+            transition: width $trans-time $trans-func, height $trans-time $trans-func, border-radius $trans-time $trans-func
 
         &__nose
             position: relative
@@ -201,12 +201,13 @@
         transform: translateY(20px)
 
         .frog__eyes
+            margin-top: -5px
             gap: 50px
 
         .frog__iris
             width: 25px
-            height: 10px
-            border-radius: 5px
+            height: 6px
+            border-radius: 3px
 
         .frog__lips
             width: 10px
@@ -216,7 +217,7 @@
             transform: translate(0, -30px)
 
         .frog__cheek-container
-            margin-top: -70px
+            margin-top: -83px
             gap: 120px
 
         .frog__cheek
