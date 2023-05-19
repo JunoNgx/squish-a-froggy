@@ -8,11 +8,6 @@
 <section class="frog">
     <div class="frog__face">
 
-        <!-- <div class="frog__face"> -->
-        <div class="frog__cheek frog__cheek--right"/>
-        <div class="frog__cheek frog__cheek--left"/>
-        <!-- </div> -->
-
         <div class="frog__eyes">
             <div class="frog__eye frog__eye--left">
                 <div class="frog__iris frog__iris--left"/>
@@ -32,11 +27,20 @@
             <div class="frog__lips"/>
         </div>
 
+    <!-- <div class="frog__face"> -->
+        <div class="frog__cheek-container">
+            <div class="frog__cheek frog__cheek--right"/>
+            <div class="frog__cheek frog__cheek--left"/>
+        <!-- </div> -->
+        </div>
+
     </div>
 </section>
 
 <style lang="sass">
 
+    $trans-time: 0.3s
+    $trans-func: ease-in-out
     $bCol: LightCoral
 
     .frog
@@ -56,6 +60,7 @@
             height: 100px
             border-radius: 50%
             background-color: blue
+            transition: transform $trans-time $trans-func
 
         &__eyes
             position: relative
@@ -121,5 +126,33 @@
             border-radius: 5px
             background-color: pink
             transform: translate(-20px, -5px)
+
+        &__cheek-container
+            position: relative
+            margin-top: 30px
+            width: 10px
+            background-color:green
+
+        &__cheek
+            position: absolute
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            background-color: cyan
+
+            &--left
+                transform: translate(0, -70px)
+            &--right
+                transform: translate(130px, -70px)
+
+    .frog__face:hover
+        cursor: crosshair
+        // background-color: yellow
+        // transform:  $trans-time $trans-func
+        transform: translateY(20px)
+
+        // .frog__
+
+
 
 </style>
