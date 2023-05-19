@@ -7,8 +7,8 @@
 </script>
 
 <main>
-    <div class="main-container">
-        {#each Array(24) as frog}
+    <div class="content">
+        {#each Array(8) as frog}
             <Frog/>
         {/each}
     </div>
@@ -33,12 +33,15 @@
     <p class="read-the-docs">
         Click on the Vite and Svelte logos to learn more
     </p> -->
+    <footer>
+        <p>Made by Juno Nguyen</p>
+    </footer>
 </main>
 
 <style lang="sass">
     .logo
         height: 6em
-        padding: 1.5em
+        padding: 0.3rem
         will-change: filter
         transition: filter 300ms
     
@@ -51,12 +54,16 @@
     .read-the-docs
         color: #888
 
-    .main-container
-        max-width: 100vw
+    .content
+        width: 350px
         display: flex
         flex-direction: row
         flex-wrap: wrap
         align-items: center
         justify-content: space-around
+    
+    footer
+        & p
+            margin: 0
 
 </style>
