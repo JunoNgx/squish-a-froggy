@@ -1,11 +1,14 @@
 <script lang="ts">
-    import svelteLogo from './assets/svelte.svg'
-    import viteLogo from '/vite.svg'
-    import Counter from './lib/Counter.svelte'
+    // import svelteLogo from './assets/svelte.svg'
+    // import viteLogo from '/vite.svg'
+    // import Counter from './lib/Counter.svelte'
+
+    import Frog from "./lib/Frog.svelte"
 </script>
 
 <main>
-    <div>
+    <Frog/>
+    <!-- <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
             <img src={viteLogo} class="logo" alt="Vite Logo" />
         </a>
@@ -25,7 +28,7 @@
 
     <p class="read-the-docs">
         Click on the Vite and Svelte logos to learn more
-    </p>
+    </p> -->
 </main>
 
 <style lang="sass">
