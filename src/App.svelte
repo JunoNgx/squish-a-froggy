@@ -8,10 +8,6 @@
             <Frog/>
         {/each}
     </div>
-
-    <footer>
-        <p>Made by Juno Nguyen</p>
-    </footer>
 </main>
 
 <style lang="sass">
@@ -27,12 +23,5 @@
         flex-wrap: wrap
         align-items: center
         justify-content: space-around
-    
-    footer
-        color: #000
-        font-family: monospace
-
-        & p
-            margin: 0
 
 </style>
