@@ -48,7 +48,7 @@
 
     .frog
         position: relative
-        border: black 1px solid
+        // border: black 1px solid
         width: 200px
         height: 200px
         display: flex

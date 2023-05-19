@@ -7,7 +7,11 @@
 </script>
 
 <main>
-    <Frog/>
+    <div class="main-container">
+        {#each Array(24) as frog}
+            <Frog/>
+        {/each}
+    </div>
     <!-- <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
             <img src={viteLogo} class="logo" alt="Vite Logo" />
@@ -46,5 +50,13 @@
 
     .read-the-docs
         color: #888
+
+    .main-container
+        max-width: 100vw
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-around
 
 </style>
