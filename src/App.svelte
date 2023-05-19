@@ -4,7 +4,7 @@
 
     const loopSquishing = () => {
         const frogEls = document.getElementsByClassName("frog")
-        // :(
+        // Looping index is so uncivilised :(
         for (let i = 0; i < frogEls.length; i++) {
             console.log(frogEls[i])
             setTimeout(() => {
