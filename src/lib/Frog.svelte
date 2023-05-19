@@ -89,6 +89,13 @@
             background-color: white
             transform: translate(9px, 9px)
 
+        &__iris
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: black
+            transform: translate(6px, 6px)
+
         &__nose
             position: relative
             margin-top: 15px
